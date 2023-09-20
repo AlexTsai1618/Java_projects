@@ -12,7 +12,7 @@ public class Email{
     private int mailboxCapacity = 1000;
     private String alternateEmail;
     private final String email;
-    private String company = "java.com";
+    private final String company = "java.com";
 
     // Constructor to receive the first name and last name
     public Email(String firstName, String lastName){
