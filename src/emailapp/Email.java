@@ -41,16 +41,12 @@ public class Email{
         System.out.println("Enter the department\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none");
         Scanner in = new Scanner(System.in);
         int depChoice = in.nextInt();
-        switch (depChoice){
-            case 1:
-                return "sales";
-            case 2:
-                return "dev";
-            case 3:
-                return "acct";
-            default:
-                return "";
-        }
+        return switch (depChoice) {
+            case 1 -> "sales";
+            case 2 -> "dev";
+            case 3 -> "acct";
+            default -> "";
+        };
     }
     // Set the mailbox capacity
     public void SetMailboxCapacity(int capacity){
